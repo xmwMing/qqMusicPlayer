@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #555555;
+    color: #fff
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration:none;
+}
+
+.header{
+    width :100%;
+    height:45px;
+    border: 1px solid white;
+}
+.content{
+    width:100%;
+    height: 460px;
+    border: 1px solid white;
+}
+.content-in{
+    width:1200px;
+    height:100%;
+    margin: 0 auto;
+    border: 1px solid red
+}
+.content-in .content-right{
+    float: right;
+    width: 400px;
+    height: 100%;
+    border: 1px solid blue
+}
+.content-in .content-left{
+    width: 800px;
+    height: 100%;
+    border: 1px solid green;
+}
+.content-left .content-toolbar{
+    width: 100%;
+    height: 40px;
+    border: 1px solid pink;
+
+}
+.content-toolbar span{
+    display: inline-block;
+    width:122px;
+    height: 100%;
+    line-height: 40px;
+    text-align: center; 
+    border: 1px solid #fff;
+    box-sizing: border-box;    /*为元素指定的任何内边距和边框都将在已设定的宽度和高度内进行绘制*/
+    border-radius:5px;
+    color:#fff;
+    opacity: 0.5;
+}
+.content-toolbar span:hover{
+    opacity: 1;
+}
+.content-toolbar span i{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-image: url('./images/icon_sprite.png');
+    margin-right: 10px;
+    margin-top: 4px;
+    vertical-align: -5px; /*元素对齐*/
+}
+.content-toolbar span:nth-child(1) i{
+    background-position: -60px -20px;
+}
+.content-toolbar span:nth-child(2) i{
+    background-position: -20px -20px;
+}
+.content-toolbar span:nth-child(3) i{
+    background-position: -40px -240px;
+}
+.content-toolbar span:nth-child(4) i{
+    background-position: -100px -20px;
+}
+.content-toolbar span:nth-child(5) i{
+    background-position: -40px -300px;
+}
+
+.content-left .content-list{
+    width: 100%;
+    height: 420px;
+    border: 1px solid black;
+}
+.content-list .ul{
+    width:100%;
+    height: 50px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    box-sizing: border-box;
+}
+.content-list div{
+    float: left;
+    line-height: 50px;
+    opacity: 0.5;
+    user-select: none; /*无法选择复制*/
+
+}
+.content-list .tag{
+    width:50px;
+    height: 100%;
+    text-align: center;  /*里面的元素会居中*/
+}
+.tag span{
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    border: 1px solid black;
+}
+.chose span{
+    background-image: url('./images/icon_sprite.png');
+    background-position: -60px -80px;
+
+}
+
+.content-list .number div{
+    display: block;
+    width: 20px;
+    height: 100%;
+    background-color: black;
+}
+.content-list .song{
+    width: 50%;
+    height: 100%;
+}
+.song .menu{
+    margin-top: 5px;
+    margin-right:20px;
+    height: 40px;
+    float: right;
+    display: none;
+
+}
+.menu a{
+    display: inline-block;
+    width:36px;
+    height: 36px;
+    background-image: url('./images/icon_list_menu.png');
+    background-repeat: no-repeat;
+}
+.menu a:nth-child(1){
+    background-position: -120px 0;
+}
+.menu a:nth-child(2){
+    background-position: -120px -80px;
+
+}
+.menu a:nth-child(3){
+    background-position: -120px -120px;
+
+}
+.menu a:nth-child(4){
+    background-position: -120px -40px;
+}
+
+.content-list .singer{
+    width: 20%;
+    height: 100%;
+    background-color: black;
+
+}
+.content-list .time{
+    width:165px;
+    height: 100%;
+    background-color: aqua;
+    display: block;
+    
+
+}
+.time  a{
+    width:36px;
+    height: 36px;
+    background-image: url('./images/icon_list_menu.png');
+    background-repeat: no-repeat;
+    background-position:-120px -160px;  
+    float: left;
+    margin-top: 5px; 
+    display: none;
+}
+.footer{
+    width:100%;
+    height:60px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border: 1px solid black;
+
+}
+.footer-in{
+    width:1200px;
+    height:100%;
+    margin: 0 auto;
+    border: 1px solid red
+
+}
+.header .logo{
+    float: left;
+    margin-left: 20px;
+}
+.header .logo a{  
+    display: inline-block;
+    width: 78px;
+    height: 21px;
+    margin-top:10px;
+    opacity: 0.5;
+}
+.header .logo a:hover{
+    opacity: 1;
+}
+
+.header .reg{
+    float: right;
+    line-height: 45px;
+}
+.header .reg li{
+    float: left;
+    margin-right: 20px;
+    color: #ffffff;
+    opacity: 0.5;
+}
+.header .reg li:hover{
+    opacity: 1;
+}
